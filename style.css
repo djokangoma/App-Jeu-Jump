@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: blue;
+    flex-direction: column;
+}
+ion-icon{
+    color: red;
+    font-size: 100px;
+}
+section{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+#jeu{
+    width: 50vw;
+    height: 30vh;
+    border: 1px solid black;
+    overflow: hidden;
+    border: 0;
+    border-bottom: 1px solid #18f;
+}
+#person{
+    width: 0.5vw;
+    background-color: black;
+    position: relative;
+    height: 2vh;
+    top: 150px;
+    animation: person-saut 500ms infinite;
+}
+/* animation person*/
+@keyframes person-saut {
+    0%{
+        top: 130px;
+    }
+    25%{
+        top: 80px;
+    }
+    50%{
+        top: 80px;
+    }
+    100%{
+        top: 130px;
+    }
+}
+
+
+/*#person ion-icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}*/
+#obstacle{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    border-radius: 50px;
+}
+.control{
+    margin-top: 20px;
+    text-align: center;
+}
+a,button{
+    padding: 10px 50px;
+    border-radius: 7px;
+    border: 0;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 15px;
+    text-decoration: 0;    
+    color: black;
+}

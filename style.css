@@ -25,7 +25,6 @@ section{
     height: 30vh;
     border: 1px solid black;
     overflow: hidden;
-    border: 0;
     border-bottom: 1px solid #18f;
 }
 #person{
